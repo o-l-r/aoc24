@@ -56,5 +56,5 @@ for x in range(R):
     for y in range(C):
         if m[x][y] == 0:
             s += count_paths(x, y)
+# s = sum(count_paths(x, y) for x in range(R) for y in range(C) if m[x][y] == 0)
 print(s)
-
