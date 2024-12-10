@@ -152,11 +152,14 @@ print(sorted_l)
 
 ## Graph
 ```python
-import networkx as nx
+import networkx
 
-g = nx.DiGraph()
+g = networkx.DiGraph()
 g.add_edge(1, 2)
 ...
-is_acyclic = nx.is_directed_acyclic_graph(g)
-list_sorted = list(nx.topological_sort(g))
+is_acyclic = networkx.is_directed_acyclic_graph(g)
+list_sorted = list(networkx.topological_sort(g))
+
+paths = networkx.descendants(g, (x,y))
+for x, y in paths: ...
 ```
