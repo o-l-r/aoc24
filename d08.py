@@ -1,4 +1,4 @@
-# AOC 2024 Day 8
+# AOC 2024, Day 08, by OLR
 from common import *
 
 l = read_file('d08.txt')
