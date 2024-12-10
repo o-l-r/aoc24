@@ -72,12 +72,12 @@ print(s)
 # once and for all => we need to build a sub-graph for
 # each update and perform the topological sort on it
 def reorder(upd):
-    g = nx.DiGraph()
+    g = networkx.DiGraph()
     for a,b in rules:
         if a in upd and b in upd:
             g.add_edge(a, b)
     #print(f"Is acyclic: {nx.is_directed_acyclic_graph(g)}")
-    return list(nx.topological_sort(g))
+    return list(networkx.topological_sort(g))
 
 s = 0
 for upd in updates:
