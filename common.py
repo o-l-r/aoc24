@@ -18,7 +18,7 @@ import pprint  # Pretty-printing data structures
 # Optional: External Libraries (install via pip if needed)
 import numpy as np  # Numerical operations
 import pandas as pd  # Data manipulation and analysis
-import networkx as nx  # Graph operations
+import networkx # Graph algorithms
 
 def read_file(filepath):
     with open(filepath, 'r') as file:
